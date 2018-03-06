@@ -42,7 +42,11 @@ code {
 }
 
 .tweetbox {
-  padding: 7px;
+  padding: 2px;
+}
+
+.theTweets {
+    list-style: none;
 }
 
 .tweetbox img {
@@ -50,7 +54,13 @@ code {
   height: 48px;
   width: 48px;
   content:url("http://lorempixel.com/48/48");
+  padding: 5px;
 }
+
+#userName {
+    font-weight: bold;
+}
+
 .content {
   margin-left: 60px;
 }
