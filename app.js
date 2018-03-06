@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const morgan = require('morgan');
 const nunjucks = require('nunjucks');
 const routes = require('./routes')
 
@@ -14,7 +15,6 @@ app.use(express.static('public'))
 app.set('view engine', 'html'); 
 app.engine('html', nunjucks.render); 
 nunjucks.configure('views', {noCache: true});
-
 
 
 // app.get('/', (req, res) => {
@@ -40,5 +40,3 @@ app.listen(3000, () => {
     console.log('Listening on Port 3000');
 });
 
-
-// download volleyball?
